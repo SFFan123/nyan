@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9AAC0EA-AF13-42E4-9500-5728BC468208}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>nyanCat</RootNamespace>
+    <AssemblyName>nyanCat</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>nyanCat.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyan2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyan_beat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyan_loop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\america.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bday.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dub.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiesta.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grumpy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jamaicnyan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jazz.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\melon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mexinyan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mummy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newyear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyancoin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyaninja.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paddy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikanyan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retro.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slomo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tacnayn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technyancolor.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vday.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wtf.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyan1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\america1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\america2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\america3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balloon1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bday1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bday2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bday3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daft1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daft2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\daft3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dub1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dub2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dub3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easter1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easter2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\easter3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiesta1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiesta2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiesta3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grumpy1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grumpy2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grumpy3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j51.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j52.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j53.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jamaicnyan1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jamaicnyan2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jamaicnyan3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jazz1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jazz2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jazz3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\melon1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\melon2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\melon3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mexinyan1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mexinyan2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mexinyan3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mummy1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mummy2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mummy3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newyear1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newyear2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newyear3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyan3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyancoin1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyancoin2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyancoin3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyaninja1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyaninja2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyaninja3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paddy1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paddy2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paddy3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikanyan1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikanyan2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikanyan3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pirate3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkin1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkin2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pumpkin3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retro1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retro2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retro3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tacnayn1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tacnayn2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tacnayn3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technyancolor1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technyancolor2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technyancolor3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vday1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vday2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vday3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmas1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmas2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmas3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie3.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
